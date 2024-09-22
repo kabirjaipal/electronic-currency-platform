@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply antialiased scroll-smooth;
+}
+
+body {
+  @apply transition-all duration-200;
+}
+
+.heading_gradient {
+  position: relative;
+  display: inline-block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to right,
+      from(gray-950),
+      via(indigo-600),
+      to(slate-950)
+    );
+    z-index: -1;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    border-radius: 0.375rem; /* Optional: Adjust the border-radius for rounded corners */
+  }
+}
+
+/* In your global CSS or component-specific styles */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-indigo-600;
+}
+
+::-webkit-scrollbar-track {
+  @apply rounded-sm bg-gray-800;
+}
