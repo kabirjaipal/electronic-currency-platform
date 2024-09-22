@@ -78,7 +78,7 @@ To get started with the project, follow these steps:
 
 ## 🔌 API Integration
 
-This project integrates with the **Transaction Cloud API** to handle transactions securely. For more information on how to use the API, check the [Transaction Cloud API Documentation](https://example.com/api-docs).
+This project integrates with the **Transaction Cloud API** to handle transactions securely. For more information on how to use the API, check the [Transaction Cloud API Documentation](https://transaction.cloud/documentation/v1/index).
 
 ## 🤝 Contributing
 
